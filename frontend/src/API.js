@@ -2,12 +2,12 @@ import axios from 'axios';
 const LOGIN_USER_KEY = 'WD_FORUM_LOGIN_USER_KEY';
 
 var baseURL;
-if (process.env.REACT_APP_ENVIRONMENT && process.env.REACT_APP_ENVIRONMENT === 'PRODUCTION') {
-    baseURL = process.env.REACT_APP_API_BASE_URL;
-} else {
-    baseURL = 'https://quick-start-backend-s.herokuapp.com/';
-}
-
+// if (process.env.REACT_APP_ENVIRONMENT && process.env.REACT_APP_ENVIRONMENT === 'PRODUCTION') {
+//     baseURL = process.env.REACT_APP_API_BASE_URL;
+// } else {
+//     baseURL = 'https://quick-start-backend-s.herokuapp.com/';
+// }
+baseURL = 'https://backend-manik.herokuapp.com/';
 const api = axios.create({
     baseURL: baseURL,
     headers: {
